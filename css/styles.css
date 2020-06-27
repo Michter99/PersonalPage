@@ -24,8 +24,12 @@ section {
   background-repeat: no-repeat;
 }
 .full { height:100vh; background:#E0E0E0 }
-.half { height:50vh; background:#E0E0E0; text-align:center}
+.half { height:30vh; background:#E0E0E0; font-size: 2.5rem; text-align:center}
 .mini { height:25vh; background:#E0E0E0; font-size: 1.7rem; text-align: center;}
+
+.habilities{
+  font-size: 2rem;
+}
 
 .banner { color: #E8E8E8;
   display:flex;
@@ -51,10 +55,10 @@ section {
 /* second banner */
 
 .banner3d-2 {
-    width:100%;
-    perspective: 700px;
-    -webkit-transform-style:flat;
-    transform-style: preserve-3d;
+  width:100%;
+  perspective: 700px;
+  -webkit-transform-style:flat;
+  transform-style: preserve-3d;
   z-index:-1;
 }
 
@@ -63,7 +67,7 @@ section {
     background:#222;
     transform: translatez(-50px);
     transform-style: preserve-3d;
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
 }
 
@@ -128,6 +132,15 @@ section {
   box-shadow: inset 25px 0 20px 10px rgba(0,0,0,0.41)
 }
 
+.image4 {
+  width:30%;
+  background-size:cover;
+  background-position:center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: inset 25px 0 20px 10px rgba(0,0,0,0.41)
+}
+
 .bottom-container{
   padding-top: 50px;
   text-align: center;
@@ -155,6 +168,14 @@ and (max-device-width : 1024px) {
   }
 
   .half{
-    height: 30vh;
+    height: 20vh;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  .intro{
+    height: 100vh;
   }
 }
