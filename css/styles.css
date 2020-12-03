@@ -3,6 +3,7 @@
 body { background: white;
 font-family: 'Montserrat', sans-serif;
 }
+
 section {
   display:flex;
   justify-content:center;
@@ -17,18 +18,18 @@ section {
 }
 .intro {
   align-items: baseline;
-  height:100vh;
+  height:28vh;
   background:#E0E0E0;
-  background-image:url("../Images/profilePic.jpg");
+  /*background-image:url("../Images/profilePic.jpg");*/
   background-size: 800px 980px;
   background-repeat: no-repeat;
 }
 .full { height:100vh; background:#E0E0E0 }
 .half { height:30vh; background:#E0E0E0; font-size: 2.5rem; text-align:center}
-.mini { height:25vh; background:#E0E0E0; font-size: 1.7rem; text-align: center;}
+.mini { height:30vh; background:#E0E0E0; font-size: 1.7rem; text-align: center;}
 
 .habilities{
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .banner { color: #E8E8E8;
@@ -164,16 +165,20 @@ section {
 and (min-device-width : 200px)
 and (max-device-width : 1024px) {
   .intro{
-    height: 45vh;
+    height: 12vh;
   }
 
   .mini{
     font-size: 2rem;
-    height: 20vh;
+    height: 15vh;
   }
 
   .half{
     height: 20vh;
+  }
+
+  .habilities{
+    font-size: 2.3rem;
   }
 }
 
@@ -181,6 +186,6 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px)
 and (max-device-width : 1024px) {
   .intro{
-    height: 100vh;
+    height: 18vh;
   }
 }
