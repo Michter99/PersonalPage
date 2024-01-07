@@ -32,18 +32,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  const navbar = document.querySelector(".navbar");
-  navbar.classList.add("transparent");
-
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 50) {
-      navbar.classList.remove("transparent");
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.add("transparent");
-      navbar.classList.remove("scrolled");
-    }
-  });
-});

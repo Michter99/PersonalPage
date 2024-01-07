@@ -62,22 +62,9 @@ body.dark-mode .navbar-toggler .navbar-toggler-icon::after {
 .navbar {
   background-color: #ffffff !important;
   font-weight: 500;
-  transition: background-color 0.3s;
 }
 
-.navbar.transparent {
-  background-color: transparent !important;
-}
-
-.navbar.scrolled {
-  background-color: #ffffff !important;
-}
-
-body.dark-mode .navbar.transparent {
-  background-color: transparent !important;
-}
-
-body.dark-mode .navbar.scrolled {
+body.dark-mode .navbar {
   background-color: #000000 !important;
 }
 
