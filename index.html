@@ -18,9 +18,10 @@
   <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand brand-container" href="#">
+        <a class="navbar-brand brand-container ms-2" href="#">
           <img
             src="./images/logo.svg"
+            class="nav-logo"
             alt="Logo"
             width="30"
             height="30"
@@ -29,7 +30,7 @@
           MRF
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler collapsed me-2"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -39,10 +40,11 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#about">ABOUT ME</a>
+              <a class="nav-link" href="#experience">EXPERIENCE</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">PROJECTS</a>
@@ -50,120 +52,174 @@
             <li class="nav-item">
               <a class="nav-link" href="#skills">SKILLS</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">CONTACT</a>
-            </li>
+            <button id="theme-toggle" class="theme-toggle">DARK MODE</button>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="intro-section">
+    <section class="intro-section">
       <div class="container">
         <h1 class="name">MIGUEL A.</h1>
         <h1 class="name">RICHTER FLORES</h1>
-        <p class="description">
-          ENGINEER IN INFORMATION TECHNOLOGY AND INTELLIGENT SYSTEMS IN CDMX
+        <p class="description mt-3">
+          Engineer in Information Technologies with a specialization in Project
+          Management. Dedicated to continuous growth and staying updated with
+          the latest technologies.
         </p>
-        <div class="buttons">
-          <a href="#skills" class="btn">SKILLS</a>
-          <a href="#contact" class="btn ms-2">CONTACT</a>
+        <div class="buttons mt-4">
+          <a
+            class="btn"
+            href="https://www.linkedin.com/in/miguel-%C3%A1ngel-richter-flores/"
+            target="_blank"
+            >LINKEDIN</a
+          >
+          <a
+            class="btn ms-2"
+            href="https://github.com/Michter99"
+            target="_blank"
+            >GITHUB</a
+          >
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="about-me-section" id="about">
-      <div class="container">
-        <h2>ABOUT ME</h2>
-        <p>
-          Engineer in Information Technologies and Intelligent Systems, with a
-          specialization in Project Management. Dedicated to continuous growth
-          and staying updated with the latest advancements. I have a keen
-          interest in Web Development, Data Science, and Artificial
-          Intelligence.
-        </p>
+    <section class="container section-heading" id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="main-timeline">
+        <div class="timeline">
+          <div class="icon"></div>
+          <div class="timeline-content">
+            <h5 class="title">Jr Analytics Engineer - Klar</h5>
+            <p>Oct 2023 - Present</p>
+            <p class="description">
+              Built and maintained efficient data pipelines, ensuring seamless
+              data flow and integrity across systems. Focused on constructing a
+              robust infrastructure and effectively managed database tables.
+              Implemented sophisticated alerts for consistent monitoring and
+              accuracy in data analysis. Automated various processes to enhance
+              operational efficiency. Proficient in utilizing a range of tools
+              including AWS, dbt, PySpark, and data orchestrators to optimize
+              data handling and analysis tasks.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="icon"></div>
+          <div class="timeline-content">
+            <h5 class="title">Advanced Analytics Intern - BBVA</h5>
+            <p>Mar 2023 - Oct 2023</p>
+            <p class="description">
+              Worked with large data sets from various sources to extract
+              knowledge, patterns, and trends. Used tools such as PySpark,
+              Teradata and MicroStrategy to perform Business Intelligence tasks.
+              By implementing artificial intelligence techniques, such as
+              regression and classification models, I managed to improve SME
+              customer retention.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="icon"></div>
+          <div class="timeline-content">
+            <h5 class="title">IT Intern - Colgate Palmolive</h5>
+            <p>Nov 2021 - Aug 2022</p>
+            <p class="description">
+              Worked with the IT team participating in pricing and billing
+              projects doing configurations, running tests and preparing
+              reports. Developed scripts to automate business user tasks using
+              different tools such as Google Apps Scripts, JavaScript and
+              AODocs.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="projects-section mb-5" id="projects">
+    <section class="projects-section section-heading mb-5" id="projects">
       <div class="container">
-        <h2>PROJECTS</h2>
+        <h2 class="section-title">Projects</h2>
         <div class="row">
-          <div class="col-lg-7 project-container">
+          <a
+            href="https://eight-puzzle.onrender.com/"
+            target="_blank"
+            class="col-lg-7 project-container"
+          >
             <img src="./images/ai.jpeg" alt="Project 1" class="project-img" />
             <div class="project-text">
-              <h3>EIGHT PUZZLE AI SOLVER</h3>
+              <h3>Eight Puzzle AI Solver</h3>
               <p>
                 The 8-puzzle solver is a web tool that finds the quickest
                 solution to a 8-puzzle problem using the A* algorithm. It
                 displays the step-by-step process to reach the solution through
                 a user-friendly interface using Flask as backend.
               </p>
-              <a href="https://eight-puzzle.onrender.com/" target="_blank"
-                >LEARN MORE</a
-              >
             </div>
-          </div>
-          <div class="col-lg-5 project-container">
+          </a>
+
+          <a
+            href="https://michter99.github.io/SenceApp/"
+            target="_blank"
+            class="col-lg-5 project-container"
+          >
             <img src="./images/sence.jpg" alt="Project 2" class="project-img" />
             <div class="project-text">
-              <h3>SENCE APP</h3>
+              <h3>Sence App</h3>
               <p>
                 Online platform that connects students in Mexico with qualified
                 university tutors to provide free personalized academic
                 assistance in various subjects.
               </p>
-              <a href="https://michter99.github.io/SenceApp/" target="_blank"
-                >LEARN MORE</a
-              >
             </div>
-          </div>
-          <div class="col-lg-5 project-container">
+          </a>
+
+          <a
+            href="https://github.com/Michter99/CentralForceOptimization"
+            target="_blank"
+            class="col-lg-5 project-container"
+          >
             <img
               src="./images/formato.jpg"
               alt="Project 3"
               class="project-img"
             />
             <div class="project-text">
-              <h3>CENTRAL FORCE OPTIMIZATION</h3>
+              <h3>Central Force Optimization</h3>
               <p>
                 Deterministic multidimensional search algorithm inspired by
                 gravitational attraction, used to find the optimal point of a
                 function.
               </p>
-              <a
-                href="https://github.com/Michter99/CentralForceOptimization"
-                target="_blank"
-                >LEARN MORE</a
-              >
             </div>
-          </div>
-          <div class="col-lg-7 project-container">
+          </a>
+
+          <a
+            href="https://github.com/Michter99/CalculadoraDistribuida"
+            target="_blank"
+            class="col-lg-7 project-container"
+          >
             <img src="./images/adsoa.jpg" alt="Project 4" class="project-img" />
             <div class="project-text">
-              <h3>AUTONOMOUS DECENTRALIZED SYSTEM</h3>
+              <h3>Autonomous Decentralized System</h3>
               <p>
                 Decentralized systems where modules operate independently,
                 interact with each other, and enable system functionality even
                 during failures, with applications in various fields such as
                 robotics and industrial production.
               </p>
-              <a
-                href="https://github.com/Michter99/CalculadoraDistribuida"
-                target="_blank"
-                >LEARN MORE</a
-              >
             </div>
-          </div>
+          </a>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="skills-section pt-5 pb-5" id="skills">
-      <div class="container mt-5 mb-4">
+    <section class="skills-section section-heading" id="skills">
+      <div class="container mt-5">
         <div class="row">
           <div class="col-md-6">
-            <h2>SKILLS</h2>
+            <h2 class="section-title">Skills</h2>
             <p>
               As an enthusiastic learner, I've developed different skills. Here
               are a couple of languages and tools I've worked with.
@@ -171,75 +227,27 @@
           </div>
           <div class="col-6 col-md-3">
             <ul>
-              <li>PYTHON</li>
-              <li>JAVASCRIPT</li>
-              <li>HTML/CSS</li>
+              <li>Python</li>
+              <li>Git</li>
+              <li>PySpark</li>
               <li>SQL</li>
-              <li>REACT</li>
+              <li>Hive</li>
             </ul>
           </div>
           <div class="col-6 col-md-3">
             <ul>
-              <li>C++</li>
-              <li>JAVA</li>
-              <li>FIREBASE</li>
-              <li>PYSPARK</li>
+              <li>Power BI</li>
+              <li>dbt</li>
+              <li>Firebase</li>
+              <li>AWS</li>
               <li>HDFS</li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="contact-section" id="contact">
-      <div class="container">
-        <h2>CONTACT</h2>
-        <p>Interested in working together? Let's connect via email</p>
-        <form id="contact-form">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Name"
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Email"
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="subject"
-                  placeholder="Subject"
-                />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="mb-3">
-                <textarea
-                  class="form-control"
-                  id="message"
-                  rows="6"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">SEND</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="footer pt-5 pb-5 ps-4">
+    <footer class="footer pt-5 pb-5 ps-4">
       <div class="container">
         <div class="row">
           <div class="col-md-6 brand-container">
@@ -253,7 +261,7 @@
             <h2>MRF</h2>
           </div>
           <div class="col-md-6">
-            <p>CONNECT WITH ME</p>
+            <p>MORE ABOUT ME</p>
             <a href="https://github.com/Michter99" target="_blank">GitHub</a
             ><br />
             <a
@@ -265,7 +273,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
