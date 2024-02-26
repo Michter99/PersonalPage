@@ -6,37 +6,27 @@
 
 body {
   min-height: 100vh;
-  background: #ffffff;
-  color: #303030;
+  background-image: url('nnnoise2.svg');
+  color: #333333;
 }
 
 body.dark-mode {
-  color: #ffffff;
+  color: #d8d8d8;
   min-height: 100vh;
-  background: hsla(247, 40%, 13%, 1);
-  background: radial-gradient(
-    70% 200% at top,
-    rgb(15, 14, 35) 0%,
-    hsla(0, 0%, 0%, 1) 100%
-  );
-  background: -moz-radial-gradient(
-    70% 200% at top,
-    hsla(247, 40%, 13%, 1) 0%,
-    hsla(0, 0%, 0%, 1) 100%
-  );
-  background: -webkit-radial-gradient(
-    70% 200% at top,
-    hsla(247, 40%, 13%, 1) 0%,
-    hsla(0, 0%, 0%, 1) 100%
-  );
+  background: #333333;
+  background-image: url('nnnoise.svg');
+}
+
+body.dark-mode .buttons a {
+  background-color: #3e8987 !important;
+}
+
+body.dark-mode .section-title {
+  color: #22c0ba !important;
 }
 
 body.dark-mode .nav-logo {
   filter: invert(1);
-}
-
-body.dark-mode .section-title {
-  color: #19cdc7;
 }
 
 body.dark-mode .navbar-toggler .navbar-toggler-icon {
@@ -44,7 +34,7 @@ body.dark-mode .navbar-toggler .navbar-toggler-icon {
   position: relative;
   width: 30px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #d8d8d8;
   display: inline-block;
   transition: all 0.3s;
 }
@@ -55,17 +45,17 @@ body.dark-mode .navbar-toggler .navbar-toggler-icon::after {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #d8d8d8;
   transition: all 0.3s;
 }
 
 .navbar {
-  background-color: #ffffff !important;
+  background-image: url('nnnoise2.svg');
   font-weight: 500;
 }
 
 body.dark-mode .navbar {
-  background-color: #000000 !important;
+  background-image: url('nnnoise.svg');
 }
 
 .brand-container {
@@ -102,7 +92,7 @@ body.dark-mode .navbar {
   position: relative;
   width: 30px;
   height: 2px;
-  background-color: #303030;
+  background-color: #333333;
   display: inline-block;
   transition: all 0.3s;
 }
@@ -113,7 +103,7 @@ body.dark-mode .navbar {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #030303;
+  background-color: #333333;
   transition: all 0.3s;
 }
 
@@ -159,12 +149,12 @@ body.dark-mode .navbar {
 }
 
 .buttons a {
-  background-color: #1da4a0 !important;
+  background-color: #306e6c !important;
   font-weight: 700 !important;
 }
 
 .buttons a:hover {
-  color: #ffffff;
+  color: #d8d8d8;
 }
 
 .description {
@@ -173,8 +163,8 @@ body.dark-mode .navbar {
 }
 
 .intro-section a {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #333333;
+  color: #d8d8d8;
   font-weight: 500;
   padding: 10px 40px;
   border-radius: 0;
@@ -186,6 +176,8 @@ body.dark-mode .navbar {
 
 .section-title {
   color: #1da4a0;
+  font-size: 35px;
+  font-weight: 600;
 }
 
 .main-timeline {
@@ -202,7 +194,7 @@ body.dark-mode .navbar {
   display: block;
   width: 2px;
   height: 100%;
-  background: #19cdc7;
+  background: #1da4a0;
   position: absolute;
   top: 0;
   left: 50;
@@ -242,8 +234,8 @@ body.dark-mode .navbar {
 }
 
 .main-timeline .icon:before {
-  background: #19cdc7;
-  border: 2px solid #19cdc7;
+  background: #1da4a0;
+  border: 2px solid #1da4a0;
   left: -0px;
 }
 
@@ -313,7 +305,7 @@ body.dark-mode .navbar {
 .project-text a {
   font-size: 18px;
   font-weight: 600;
-  color: #ffffff;
+  color: #d8d8d8;
   text-decoration: none;
 }
 
@@ -326,6 +318,7 @@ body.dark-mode .navbar {
   padding-top: 60px;
   padding-bottom: 80px;
   min-height: 40px;
+  margin: 70px auto !important;
 }
 
 .skills-section li {
@@ -333,10 +326,28 @@ body.dark-mode .navbar {
   font-weight: 500;
 }
 
-.footer {
+.section-separator {
+  width: 65%;
   background-color: #000000;
+  opacity: 0.5;
+  margin: 0 auto;
+  height: 2px !important;
+}
+
+body.dark-mode .section-separator {
+  filter: invert(1);
+}
+
+.footer {
   height: 100%;
-  color: #ffffff;
+}
+
+body.dark-mode footer a {
+  color: #d8d8d8;
+}
+
+body.dark-mode .logo {
+  filter: invert(1) !important;
 }
 
 .footer h2 {
@@ -352,7 +363,7 @@ body.dark-mode .navbar {
 .footer a {
   font-size: 25px;
   font-weight: 600;
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -369,7 +380,7 @@ body.dark-mode .navbar {
 }
 
 .footer .brand-container .logo {
-  filter: invert(1);
+  filter: invert(0.2);
   width: 60px;
   height: 60px;
 }
@@ -448,6 +459,10 @@ body.dark-mode .navbar {
   .footer h2 {
     font-size: 3rem;
   }
+
+  .section-separator {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -475,5 +490,9 @@ body.dark-mode .navbar {
     display: block;
     margin-left: 25%;
     width: 50%;
+  }
+
+  .section-separator {
+    width: 85%;
   }
 }
