@@ -30,7 +30,7 @@ export default function Contact() {
         </a>
         <a
           className="contact__link contact__link--cta"
-          href="/Resume.pdf"
+          href="./Resume.pdf"
           download="Miguel-Richter-Resume.pdf"
         >
           <span>
