@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.anthropic.com)",
+      "Bash(gunzip -c \"/Users/miguel_richter/.claude/projects/-Users-miguel-richter-Documents-maestria-DADI-PersonalPage/47ede86a-e6c0-496d-b86e-af4f2e66e4c0/tool-results/webfetch-1779945082401-qjypg2.bin\")",
+      "Bash(grep -v \"^$\")",
+      "Bash(tar tf *)",
+      "Read(//private/tmp/**)",
+      "Bash(tar xf *)",
+      "Bash(npm create *)",
+      "Bash(npx create-vite@latest . --template react)",
+      "Bash(mv /Users/miguel_richter/Documents/maestria/DADI/PersonalPage/PersonalPage/* /Users/miguel_richter/Documents/maestria/DADI/PersonalPage/)",
+      "Bash(mv /Users/miguel_richter/Documents/maestria/DADI/PersonalPage/PersonalPage/.gitignore /Users/miguel_richter/Documents/maestria/DADI/PersonalPage/)",
+      "Bash(rmdir /Users/miguel_richter/Documents/maestria/DADI/PersonalPage/PersonalPage)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(kill %1)"
+    ]
+  }
+}
