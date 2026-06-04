@@ -321,11 +321,7 @@ body::after {
 .role {
   position: relative;
   margin-bottom: 36px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s, transform 0.6s;
 }
-.role.visible { opacity: 1; transform: translateY(0); }
 .role::before {
   content: "";
   position: absolute;
@@ -430,11 +426,7 @@ body::after {
   border: 1px solid var(--line-bright);
   padding: 20px;
   position: relative;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s, transform 0.6s;
 }
-.skill-cat.visible { opacity: 1; transform: translateY(0); }
 .skill-cat:nth-child(odd)::after {
   content: "";
   position: absolute; right: -1px; top: -1px;
@@ -523,12 +515,8 @@ body::after {
   grid-template-columns: 70px 1fr;
   background: var(--surface);
   border: 1px solid var(--line-bright);
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s, transform 0.6s;
   overflow: hidden;
 }
-.project.visible { opacity: 1; transform: translateY(0); }
 .project::before {
   content: "";
   position: absolute;
@@ -752,12 +740,14 @@ body::after {
    ============================================================ */
 @media (prefers-reduced-motion: reduce) {
   .hero__name .char,
-  .hero__meta,
+  .hero__meta {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
   .role,
   .skill-cat,
   .project {
-    opacity: 1 !important;
-    transform: none !important;
     animation: none !important;
   }
   .scanlines::after,

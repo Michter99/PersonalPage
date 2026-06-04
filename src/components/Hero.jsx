@@ -60,10 +60,6 @@ export default function Hero() {
             <span className="label">// Node</span>
             <span className="value">CDMX · MX</span>
           </div>
-          <div className="hero__meta-item">
-            <span className="label">// Clock</span>
-            <span className="value">{time.toLocaleTimeString('en-GB')}</span>
-          </div>
         </div>
       </div>
 

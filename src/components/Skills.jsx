@@ -42,7 +42,7 @@ export default function Skills() {
 
       <div className="skills">
         {CATEGORIES.map((c, i) => (
-          <div className="skill-cat reveal" key={i}>
+          <div className="skill-cat" key={i}>
             <div className="skill-cat__head">
               <h3 className="skill-cat__title">{c.title}</h3>
               <span className="skill-cat__id">{c.id}</span>

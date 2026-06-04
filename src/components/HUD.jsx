@@ -24,9 +24,6 @@ export default function HUD() {
       </div>
       <div className="hud hud--bottom">
         <div>
-          // <span className="cyan">SCROLL</span> to traverse{' '}
-        </div>
-        <div>
           © 2026 MIGUEL RICHTER
         </div>
       </div>

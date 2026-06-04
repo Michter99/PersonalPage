@@ -110,7 +110,7 @@ export default function Experience() {
           <div className="exp__list">
             {company.roles.map((r, ri) => (
               <div
-                className={"role reveal" + (r.promo ? " promo" : "")}
+                className={"role" + (r.promo ? " promo" : "")}
                 key={ri}
               >
                 <div className="role__head">

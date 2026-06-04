@@ -6,7 +6,7 @@ const PROJECTS = [
     blurb:
       "Web tool that finds the shortest solution to the classic 8-puzzle using the A* algorithm — tracing every step of the search in a clean Flask-powered UI.",
     stack: ["Python", "Flask", "A*", "Heuristics"],
-    links: [{ label: "live demo", href: "https://eight-puzzle.onrender.com/" }],
+    link: { label: "live demo", href: "https://eight-puzzle.onrender.com/" },
   },
   {
     id: "02",
@@ -15,12 +15,10 @@ const PROJECTS = [
     blurb:
       "C++ implementation of R. A. Formato's CFO — a deterministic, gravity-inspired multidimensional search algorithm for finding the optimum of a function.",
     stack: ["C++", "Optimization", "Numerical"],
-    links: [
-      {
-        label: "github",
-        href: "https://github.com/Michter99/CentralForceOptimization",
-      },
-    ],
+    link: {
+      label: "github",
+      href: "https://github.com/Michter99/CentralForceOptimization",
+    },
   },
   {
     id: "03",
@@ -29,12 +27,10 @@ const PROJECTS = [
     blurb:
       "A RAG-driven customer support bot for Universidad Panamericana. It orchestrates document chunking, generates OpenAI vector embeddings, and performs localized semantic search using FAISS to inject academic context directly into GPT-powered response pipelines.",
     stack: ["Node.js", "OpenAI", "FAISS", "RAG", "Telegram"],
-    links: [
-      {
-        label: "github",
-        href: "https://github.com/Michter99/ChatbotAtencionUP",
-      },
-    ],
+    link: {
+      label: "github",
+      href: "https://github.com/Michter99/ChatbotAtencionUP",
+    },
   },
   {
     id: "04",
@@ -43,9 +39,10 @@ const PROJECTS = [
     blurb:
       "A lightweight, zero-dependency analytics dashboard built for a local table tennis league to dynamically compute standings, process match outcomes, and track player performance stats. Features an on-the-fly image rendering utility for sharing matchday updates.",
     stack: ["HTML", "CSS", "JavaScript"],
-    links: [
-      { label: "live site", href: "https://michter99.github.io/liga-nekoma/" },
-    ],
+    link: {
+      label: "live site",
+      href: "https://michter99.github.io/liga-nekoma/",
+    },
   },
 ];
 
@@ -60,7 +57,7 @@ export default function Projects() {
 
       <div className="projects">
         {PROJECTS.map((p, i) => (
-          <div className="project reveal" key={i}>
+          <div className="project" key={i}>
             <div className="project__id">PRJ_{p.id}</div>
             <div className="project__body">
               <div className="project__head">
@@ -75,21 +72,16 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-              {p.links.length > 0 && (
-                <div className="project__links">
-                  {p.links.map((l, j) => (
-                    <a
-                      key={j}
-                      className="project__link"
-                      href={l.href}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <span className="arr">→</span> {l.label}
-                    </a>
-                  ))}
-                </div>
-              )}
+              <div className="project__links">
+                <a
+                  className="project__link"
+                  href={p.link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="arr">→</span> {p.link.label}
+                </a>
+              </div>
             </div>
           </div>
         ))}
