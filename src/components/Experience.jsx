@@ -93,33 +93,33 @@ const ROLES = [
 export default function Experience() {
   return (
     <div id="experience" className="section">
-      <div className="section__head">
+      <div className="section__head d-flex align-items-baseline gap-3">
         <span className="section__num">01 //</span>
-        <h2 className="section__title">Experience Log</h2>
-        <span className="section__rule"></span>
+        <h2 className="section__title text-uppercase m-0">Experience Log</h2>
+        <span className="section__rule flex-grow-1"></span>
       </div>
 
       {ROLES.map((company, ci) => (
-        <div className="exp" key={ci} style={{ marginBottom: 56 }}>
-          <div className="exp__company">
+        <div className="row g-5" key={ci} style={{ marginBottom: 56 }}>
+          <div className="exp__company col-12 col-md-3 position-sticky align-self-start text-uppercase">
             <div className="exp__company-card">
-              <div className="name">{company.company}</div>
+              <div className="name text-uppercase mb-1">{company.company}</div>
               <div className="meta">{company.meta}</div>
             </div>
           </div>
-          <div className="exp__list">
+          <div className="exp__list col-12 col-md-9 position-relative">
             {company.roles.map((r, ri) => (
               <div
-                className={"role" + (r.promo ? " promo" : "")}
+                className={"role position-relative" + (r.promo ? " promo" : "")}
                 key={ri}
               >
-                <div className="role__head">
-                  <span className="role__rank">{r.rank}</span>
-                  <h3 className="role__title">{r.title}</h3>
-                  <span className="role__date">{r.date}</span>
+                <div className="role__head d-flex flex-wrap align-items-baseline mb-1">
+                  <span className="role__rank text-uppercase">{r.rank}</span>
+                  <h3 className="role__title m-0 text-uppercase">{r.title}</h3>
+                  <span className="role__date text-uppercase">{r.date}</span>
                 </div>
-                <div className="role__loc">{r.loc}</div>
-                <ul className="role__bullets">
+                <div className="role__loc text-uppercase">{r.loc}</div>
+                <ul className="role__bullets list-unstyled mb-0">
                   {r.bullets.map((b, bi) => (
                     <li key={bi}>{b}</li>
                   ))}

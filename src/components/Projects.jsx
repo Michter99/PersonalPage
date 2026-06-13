@@ -49,37 +49,42 @@ const PROJECTS = [
 export default function Projects() {
   return (
     <div id="projects" className="section">
-      <div className="section__head">
+      <div className="section__head d-flex align-items-baseline gap-3">
         <span className="section__num">03 //</span>
-        <h2 className="section__title">Selected Projects</h2>
-        <span className="section__rule"></span>
+        <h2 className="section__title text-uppercase m-0">Selected Projects</h2>
+        <span className="section__rule flex-grow-1"></span>
       </div>
 
-      <div className="projects">
+      <div className="row g-3">
         {PROJECTS.map((p, i) => (
-          <div className="project" key={i}>
-            <div className="project__id">PRJ_{p.id}</div>
+          <div
+            className="project col-12 col-md-6 position-relative overflow-hidden"
+            key={i}
+          >
+            <div className="project__id d-flex align-items-start justify-content-center">
+              PRJ_{p.id}
+            </div>
             <div className="project__body">
-              <div className="project__head">
-                <h3 className="project__title">{p.title}</h3>
+              <div className="project__head d-flex align-items-baseline justify-content-between flex-wrap">
+                <h3 className="project__title m-0 text-uppercase">{p.title}</h3>
               </div>
-              <span className="project__tag">{p.tag}</span>
+              <span className="project__tag text-uppercase">{p.tag}</span>
               <p className="project__blurb">{p.blurb}</p>
-              <div className="project__stack">
+              <div className="project__stack d-flex flex-wrap">
                 {p.stack.map((s, j) => (
-                  <span key={j} className="project__chip">
+                  <span key={j} className="project__chip text-uppercase">
                     {s}
                   </span>
                 ))}
               </div>
-              <div className="project__links">
+              <div className="project__links d-flex flex-wrap">
                 <a
-                  className="project__link"
+                  className="project__link text-uppercase text-decoration-none"
                   href={p.link.href}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span className="arr">→</span> {p.link.label}
+                  <span className="arr me-1">→</span> {p.link.label}
                 </a>
               </div>
             </div>

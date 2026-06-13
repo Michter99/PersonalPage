@@ -11,7 +11,7 @@ export default function App() {
     <>
       <HUD />
       <div className="scanlines"></div>
-      <div className="page">
+      <div className="page mx-auto">
         <Hero />
         <Experience />
         <Skills />
