@@ -230,6 +230,7 @@ body::after {
   top: 64px;
   font-size: 11px;
   letter-spacing: 0.15em;
+  z-index: 10;
 }
 .exp__company-card {
   border: 1px solid var(--line-bright);
